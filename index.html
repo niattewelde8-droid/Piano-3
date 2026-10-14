@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Keyboard Piano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Keyboard Piano</h1>
+  <p>Press A S D F G H J K to play</p>
+
+  <!-- Song mode controls (bonus) -->
+  <div class="controls">
+    <select id="songSelect"></select>
+    <button id="autoBtn">Play for me</button>
+    <button id="learnBtn">Learn mode</button>
+    <button id="stopBtn">Stop</button>
+  </div>
+  <p id="status">Pick a song, then choose a mode.</p>
+
+  <div id="lastNote">&nbsp;</div>
+
+  <div class="piano">
+    <div class="key" data-key="a">C<br>Do<br><kbd>A</kbd></div>
+    <div class="key" data-key="s">D<br>Re<br><kbd>S</kbd></div>
+    <div class="key" data-key="d">E<br>Mi<br><kbd>D</kbd></div>
+    <div class="key" data-key="f">F<br>Fa<br><kbd>F</kbd></div>
+    <div class="key" data-key="g">G<br>Sol<br><kbd>G</kbd></div>
+    <div class="key" data-key="h">A<br>La<br><kbd>H</kbd></div>
+    <div class="key" data-key="j">B<br>Ti<br><kbd>J</kbd></div>
+    <div class="key" data-key="k">C<br>Do<br><kbd>K</kbd></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
